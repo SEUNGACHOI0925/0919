@@ -1,0 +1,118 @@
+body{margin: 0; padding: 0; background-color: aliceblue;} 
+
+.containerA, .containerB, .containerC, .containerD {
+    display: flex; 
+    background-color: white;
+    width: 70%;
+    margin-top: -50px;
+    margin-left: 15%;
+    margin-right: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    animation: slideDown 2s ease-in-out forwards; 
+    animation-iteration-count: 1;
+}
+.containerD{margin-bottom: 30px;}
+.con_Ba{ 
+    margin: 30px;
+    animation: blink 1s alternate;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+
+.con_Ca{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 55px;
+    text-align: center;
+    perspective: 1000px;
+}
+.con_Ca:hover {
+    transform: rotateY(360deg); 
+    transition: transform 2s ease; 
+}
+h4{
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    border: 1px solid rgb(197, 197, 197); 
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 100px;
+    margin : 50px;
+    animation: bounce 1s ease-in-out infinite alternate;
+    animation-delay: 2s;
+}
+h3{ margin: 70px 60px 10px 10px; }
+p{
+    margin: 10px;
+    animation: fadeIn 3.5s ease-in-out forwards;
+}
+.skill{ 
+    display: flex; 
+    animation:shake 0.5s infinite alternate;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+}
+.sk_bg{ background-color: rgb(255, 227, 151); padding: 0 10px;}
+.video{
+    margin: 5% 30%;
+}
+@keyframes slideDown {
+    0% {
+        margin-top: -250px; 
+    }
+    100% {
+        margin-top: 30px; 
+    }
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px); 
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity:.5;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px); 
+    }
+    75% {
+        transform: translateX(-5px); 
+    }
+    100% {
+        transform: translateX(5px); 
+    }
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
