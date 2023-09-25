@@ -19,4 +19,4 @@
 - perspective
 - text-align
 - keyframes
-- opacity 등...
+- opacity
